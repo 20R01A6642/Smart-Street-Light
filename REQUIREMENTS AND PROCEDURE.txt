@@ -1,0 +1,32 @@
+REQUIREMENTS AND PROCEDURE:
+
+The implementation of the code for IoT-based smart street lights requires both hardware and software components. The following are the requirements for both:
+
+Hardware requirements:
+- Arduino board (such as Arduino Uno or Arduino Mega)
+- ESP8266 Wi-Fi module or any other Wi-Fi module that supports the MQTT protocol
+- Light sensor (such as LDR)
+- Relay module
+- PIR sensor (for motion detection)
+- Jumper wires
+- Breadboard
+- Power supply (9V battery or USB cable)
+
+Software requirements:
+- Arduino IDE (Integrated Development Environment) for writing and uploading the code to the Arduino board
+- MQTT broker software (such as Mosquitto or HiveMQ)
+- MQTT client library (such as PubSubClient) for communicating with the MQTT broker
+- Libraries for the sensors used in the project (such as Adafruit_Sensor, Adafruit_TSL2561, and Adafruit_MQTT)
+
+IMPLEMENTATION:
+
+The code implementation requires the following steps:
+1. Connect the ESP8266 Wi-Fi module to the Arduino board using jumper wires and configure it to connect to your Wi-Fi network.
+2. Connect the light sensor and PIR sensor to the Arduino board using jumper wires.
+3. Install the necessary libraries for the sensors and MQTT client in the Arduino IDE.
+4. Write the code for the Arduino board that reads the sensor data, sends it to the MQTT broker, and receives commands from the MQTT broker to control the relay module.
+5. Upload the code to the Arduino board using the Arduino IDE.
+6. Install and configure the MQTT broker software on a server or cloud-based platform.
+7. Test the smart street light system by subscribing to the MQTT topics and sending commands to turn the lights on or off and adjust the brightness.
+
+Note that the above requirements and steps are general guidelines, and the specific hardware and software components required may vary depending on the specific implementation and use case.
